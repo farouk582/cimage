@@ -2,6 +2,6 @@
 using namespace std;
 
 int main() {
-    cout << "Hello from Docker using C++ " << endl;
+    cout << "Hello  " << endl;
     return 0;
 }

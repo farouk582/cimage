@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: depo1
+
+spec: 
+  selector: 
+    matchLabels:
+      label-name: cimagecode   
+  replicas: 5
+  template: 
+    metadata: 
+      name: pod1
+      labels:
+        label-name: cimagecode
+
+
+    spec:
+      containers:
+        - image: farouk582/farouk2023040169
+          name: c5
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "1"
